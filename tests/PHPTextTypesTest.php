@@ -3,9 +3,9 @@
 namespace tests;
 
 use PHPUnit\Framework\TestCase;
-use Darling\PHPTextTypes\traits\PHPUnitConfigurationTests;
-use Darling\PHPTextTypes\traits\PHPUnitTestMessages;
-use Darling\PHPTextTypes\traits\PHPUnitRandomValues;
+use Darling\PHPUnitTestUtilities\traits\PHPUnitConfigurationTests;
+use Darling\PHPUnitTestUtilities\traits\PHPUnitTestMessages;
+use Darling\PHPUnitTestUtilities\traits\PHPUnitRandomValues;
 
 /**
  * Defines common methods that may be useful to all
