@@ -16,6 +16,9 @@ composer require darling/php-text-types
 Text represents a string, can be cast to the string it represents,
 and can provide information about the string it represents.
 
+Note: The `Darling\PHPTextTypes\Text` class is the parent of all
+      other classes defined by this library.
+
 ### `Darling\PHPTextTypes\ClassString`
 
 A ClassString is the name of an existing Class prefixed by
@@ -75,4 +78,40 @@ in length, and only contains the following characters:
 An Id is AlphanumericText whose length is between 60 and 80
 characters.
 
+# Example
 
+The following example demonstrates how the classes provided
+by the PHPTextTypes library might be used.
+
+```
+<?php
+
+require str_replace(
+    'examples',
+    '',
+    __DIR__ . DIRECTORY_SEPARATOR . 'vendor/autoload.php'
+);
+
+use \Darling\PHPTextTypes\classes\strings\Text;
+
+$text = new Text('Foo bar baz.');
+
+echo $text;
+// example output: Foo bar baz.
+
+echo strval($text->length());
+// example output: 12
+
+echo ($text->contains($text) ? 'True' : 'False');
+// example output: True
+
+```
+
+```
+/** `Darling\PHPTextTypes\ClassString` */
+/** `Darling\PHPTextTypes\UnknownClass` */
+/** `Darling\PHPTextTypes\SafeText` */
+/** `Darling\PHPTextTypes\AlphanumericText` */
+/** `Darling\PHPTextTypes\Name` */
+/** `Darling\PHPTextTypes\Id` */
+```
