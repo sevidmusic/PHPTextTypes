@@ -15,7 +15,7 @@ final class UnknownClass extends ClassString implements UnknownClassInterface
      * @example
      *
      * ```
-     * $text = new UnknownClass();
+     * $unknownClass = new UnknownClass();
      *
      * echo $unknownClass;
      * // example output: Darling\PHPTextTypes\classes\strings\UnknownClass
