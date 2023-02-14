@@ -2,6 +2,16 @@
 
 A collection of classes that represent various types of text.
 
+- [Installation](#installation)
+
+- [Classes](#classes)
+
+- [Classes](#classes)
+
+  - [Darling\PHPTextTypes\Text](#darling\phptexttypes\text)
+  - [Darling\PHPTextTypes\ClassString](#darling\classstring\)
+  - [Darling\PHPTextTypes\UnknownClass](#darling\unknownclass\)
+
 # Installation
 
 ```
