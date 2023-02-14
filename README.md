@@ -6,8 +6,6 @@ A collection of classes that represent various types of text.
 
 - [Classes](#classes)
 
-- [Classes](#classes)
-
   - [Darling\PHPTextTypes\Text](#darlingphptexttypestext)
   - [Darling\PHPTextTypes\ClassString](#darlingphptexttypesclassstring)
   - [Darling\PHPTextTypes\UnknownClass](#darlingphptexttypesunknownclass)
