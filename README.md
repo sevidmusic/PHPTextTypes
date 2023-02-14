@@ -9,6 +9,10 @@ A collection of classes that represent various types of text.
   - [Darling\PHPTextTypes\Text](#darlingphptexttypestext)
   - [Darling\PHPTextTypes\ClassString](#darlingphptexttypesclassstring)
   - [Darling\PHPTextTypes\UnknownClass](#darlingphptexttypesunknownclass)
+  - [Darling\PHPTextTypes\SafeText](#darlingphptexttypessafetext)
+  - [Darling\PHPTextTypes\AlphanumericText](#darlingphptexttypesalphanumerictext)
+  - [Darling\PHPTextTypes\Name](#darlingphptexttypesname)
+  - [Darling\PHPTextTypes\Id](#darlingphptexttypesid)
 
 # Installation
 
