@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d78f38bd86d27b3ce0ee3ca8ad9519a5",
+    "content-hash": "560815f4df197e549ba10f70d56452ea",
     "packages": [
         {
             "name": "darling/php-unit-test-utilities",
