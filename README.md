@@ -22,19 +22,21 @@ composer require darling/php-text-types
 
 # Classes
 
-
-### `Darling\PHPTextTypes\Text`
+### [Darling\PHPTextTypes\Text](https://github.com/sevidmusic/PHPTextTypes/blob/main/src/classes/strings/Text.php)
 
 Text represents a string, can be cast to the string it represents,
 and can provide information about the string it represents.
 
-Note: The `Darling\PHPTextTypes\Text` class is the parent of all
-      other classes defined by this library.
+Note:
+The [Darling\PHPTextTypes\Text](https://github.com/sevidmusic/PHPTextTypes/blob/main/src/classes/strings/Text.php)
+class is the parent of all other classes defined by this library.
 
 Example:
 
 ```
 <?php
+
+require __DIR__ . '/vendor/autoload.php';
 
 use \Darling\PHPTextTypes\classes\strings\Text;
 
@@ -56,7 +58,8 @@ echo ($text->contains('foo') ? 'True' : 'False');
 // example output: False
 
 ```
-### `Darling\PHPTextTypes\ClassString`
+
+### [Darling\PHPTextTypes\ClassString](https://github.com/sevidmusic/PHPTextTypes/blob/main/src/classes/strings/ClassString.php)
 
 A ClassString is the name of an existing Class prefixed by
 it's namespace.
@@ -233,4 +236,5 @@ echo $id;
 U7ok0eYte87rfdhl2nbMtLghqSQxRQH2FdOBUvjRQG5U99rEfV7m9CNiNLRMd
 
 ```
+
 
