@@ -59,6 +59,11 @@ echo ($text->contains('foo') ? 'True' : 'False');
 
 ```
 
+Note:
+A working example can be found at:
+
+[https://github.com/sevidmusic/PHPTextTypes/blob/main/TextExample.php](https://github.com/sevidmusic/PHPTextTypes/blob/main/TextExample.php)
+
 ### [Darling\PHPTextTypes\ClassString](https://github.com/sevidmusic/PHPTextTypes/blob/main/src/classes/strings/ClassString.php)
 
 A ClassString is the name of an existing Class prefixed by
@@ -68,6 +73,8 @@ Example:
 
 ```
 <?php
+
+require __DIR__ . '/vendor/autoload.php';
 
 use \Darling\PHPTextTypes\classes\strings\ClassString;
 
