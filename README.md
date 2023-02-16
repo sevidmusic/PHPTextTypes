@@ -33,6 +33,8 @@ class is the parent of all other classes defined by this library.
 
 Example:
 
+[https://github.com/sevidmusic/PHPTextTypes/blob/main/TextExample.php](https://github.com/sevidmusic/PHPTextTypes/blob/main/TextExample.php)
+
 ```
 <?php
 
@@ -58,11 +60,6 @@ echo ($text->contains('foo') ? 'True' : 'False');
 // example output: False
 
 ```
-
-Note:
-A working example can be found at:
-
-[https://github.com/sevidmusic/PHPTextTypes/blob/main/TextExample.php](https://github.com/sevidmusic/PHPTextTypes/blob/main/TextExample.php)
 
 ### [Darling\PHPTextTypes\ClassString](https://github.com/sevidmusic/PHPTextTypes/blob/main/src/classes/strings/ClassString.php)
 
