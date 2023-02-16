@@ -23,7 +23,7 @@ composer require darling/php-text-types
 # Classes
 
 The following is an overview of the classes provided by the
-PHPTextTypes library. These classes can be used as is, or
+`PHPTextTypes` library. These classes can be used as is, or
 extended to define new types of text.
 
 ### [Darling\PHPTextTypes\Text](https://github.com/sevidmusic/PHPTextTypes/blob/main/src/classes/strings/Text.php)
