@@ -15,7 +15,7 @@ use Darling\PHPTextTypes\interfaces\strings\SafeText;
  * // example output: Foo_Bar baz-bazzer
  *
  * echo $alphanumericText;
- * // example output: FooBarbazbazzer
+ * // example output: FooBarBazBazzer
  *
  * ```
  */

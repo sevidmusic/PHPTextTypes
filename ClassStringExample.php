@@ -8,9 +8,11 @@ $obj = (object) array('propertyName' => 'value');
 
 $classString = new ClassString($obj);
 
-echo $classString . PHP_EOL;
+echo $classString;
+// example output: stdClass
 
 $classString = new ClassString($classString);
 
-echo $classString . PHP_EOL;
+echo $classString;
+// example output: Darling\PHPTextTypes\classes\strings\ClassString
 
