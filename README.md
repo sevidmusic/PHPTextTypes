@@ -22,6 +22,12 @@ composer require darling/php-text-types
 
 # Classes
 
+The following is an overview of the classes provided by the
+`PHPTextTypes` library.
+
+These classes can be used as is, or extended to define new
+types of text.
+
 ### [Darling\PHPTextTypes\Text](https://github.com/sevidmusic/PHPTextTypes/blob/main/src/classes/strings/Text.php)
 
 Text represents a string, can be cast to the string it represents,
@@ -32,6 +38,8 @@ The [Darling\PHPTextTypes\Text](https://github.com/sevidmusic/PHPTextTypes/blob/
 class is the parent of all other classes defined by this library.
 
 Example:
+
+[https://github.com/sevidmusic/PHPTextTypes/blob/main/TextExample.php](https://github.com/sevidmusic/PHPTextTypes/blob/main/TextExample.php)
 
 ```
 <?php
@@ -69,6 +77,8 @@ Example:
 ```
 <?php
 
+require __DIR__ . '/vendor/autoload.php';
+
 use \Darling\PHPTextTypes\classes\strings\ClassString;
 
 $obj = (object) array('propertyName' => 'value');
@@ -94,6 +104,8 @@ Example:
 ```
 <?php
 
+require __DIR__ . '/vendor/autoload.php';
+
 use \Darling\PHPTextTypes\classes\strings\ClassString;
 use \Darling\PHPTextTypes\classes\strings\UnknownClass;
 
@@ -103,9 +115,14 @@ echo $unknownClass;
 // example output: Darling\PHPTextTypes\classes\strings\UnknownClass
 
 /**
- * UnknownClass::class is returned by the ClassString class's
- * __toString() method when the class intended to be represented
- * by a ClassString instance does not exist.
+ * Note:
+ *
+ * UnknownClass::class will be returned by a ClassString instance's
+ * __toString() method if the class represented by the ClassString
+ * instance does not actually exist.
+ *
+ * For Example:
+ *
  */
 
 $classString = new ClassString('Class\That\Does\Not\Exist');
@@ -117,7 +134,6 @@ $classString = new ClassString('a string');
 
 echo $classString;
 // example output: Darling\PHPTextTypes\classes\strings\UnknownClass
-
 
 ```
 
@@ -133,7 +149,8 @@ The following characters are considered safe:
 - Hyphens: -
 - Periods: .
 
-Unsafe characters will be replaced with underscores.
+Unsafe characters in the original Text will be replaced with
+underscores.
 
 A consecutive sequence of 2 or more unsafe characters will be
 replaced by a single underscore.
@@ -155,13 +172,15 @@ Example:
 ```
 <?php
 
+require __DIR__ . '/vendor/autoload.php';
+
 use \Darling\PHPTextTypes\classes\strings\SafeText;
+use \Darling\PHPTextTypes\classes\strings\Text;
 
 $safeText = new SafeText(new Text('Foo Bar Baz'));
 
 echo $safeText;
 // example output: Foo_Bar_Baz
-
 
 ```
 
@@ -175,6 +194,8 @@ Example:
 ```
 <?php
 
+require __DIR__ . '/vendor/autoload.php';
+
 use \Darling\PHPTextTypes\classes\strings\AlphanumericText;
 use \Darling\PHPTextTypes\classes\strings\Text;
 
@@ -182,11 +203,8 @@ $alphanumericText = new AlphanumericText(
     new Text('Foo_Bar baz-bazzer')
 );
 
-echo $alphanumericText->originalText();
-// example output: Foo_Bar baz-bazzer
-
 echo $alphanumericText;
-// example output: FooBarbazbazzer
+// example output: FooBarBazBazzer
 
 ```
 
@@ -205,6 +223,8 @@ Example:
 
 ```
 <?php
+
+require __DIR__ . '/vendor/autoload.php';
 
 use \Darling\PHPTextTypes\classes\strings\Name;
 use \Darling\PHPTextTypes\classes\strings\Text;
@@ -226,6 +246,8 @@ Example:
 ```
 <?php
 
+require __DIR__ . '/vendor/autoload.php';
+
 use \Darling\PHPTextTypes\classes\strings\Id;
 
 $id = new Id();
@@ -233,7 +255,7 @@ $id = new Id();
 echo $id;
 
 // example output:
-U7ok0eYte87rfdhl2nbMtLghqSQxRQH2FdOBUvjRQG5U99rEfV7m9CNiNLRMd
+// U7ok0eYte87rfdhl2nbMtLghqSQxRQH2FdOBUvjRQG5U99rEfV7m9CNiNLRMd
 
 ```
 
