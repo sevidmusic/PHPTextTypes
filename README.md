@@ -95,7 +95,7 @@ echo $classString;
 
 ```
 
-### [Darling\PHPTextTypes\ClassString](https://github.com/sevidmusic/PHPTextTypes/blob/main/src/classes/strings/UnknownClass.php)
+### [Darling\PHPTextTypes\UnknownClass](https://github.com/sevidmusic/PHPTextTypes/blob/main/src/classes/strings/UnknownClass.php)
 
 An UnknownClass is a ClassString that represents an unknown class.
 
@@ -137,7 +137,7 @@ echo $classString;
 
 ```
 
-### [Darling\PHPTextTypes\ClassString](https://github.com/sevidmusic/PHPTextTypes/blob/main/src/classes/strings/SafeText.php)
+### [Darling\PHPTextTypes\SafeText](https://github.com/sevidmusic/PHPTextTypes/blob/main/src/classes/strings/SafeText.php)
 
 SafeText is used to provide a safe form of Text that may contain
 unsafe characters.
@@ -184,7 +184,7 @@ echo $safeText;
 
 ```
 
-### [Darling\PHPTextTypes\ClassString](https://github.com/sevidmusic/PHPTextTypes/blob/main/src/classes/strings/AlphanumericText.php)
+### [Darling\PHPTextTypes\AlphanumericText](https://github.com/sevidmusic/PHPTextTypes/blob/main/src/classes/strings/AlphanumericText.php)
 
 AlphanumericText is SafeText that only contains
 alphanumeric characters.
@@ -208,7 +208,7 @@ echo $alphanumericText;
 
 ```
 
-### [Darling\PHPTextTypes\ClassString](https://github.com/sevidmusic/PHPTextTypes/blob/main/src/classes/strings/Name.php)
+### [Darling\PHPTextTypes\Name](https://github.com/sevidmusic/PHPTextTypes/blob/main/src/classes/strings/Name.php)
 
 A Name is SafeText that begins with an alphanumeric character,
 is at least 1 character in length, is no more than 70 characters
@@ -236,7 +236,7 @@ echo $name;
 
 ```
 
-### [Darling\PHPTextTypes\ClassString](https://github.com/sevidmusic/PHPTextTypes/blob/main/src/classes/strings/Id.php)
+### [Darling\PHPTextTypes\Id](https://github.com/sevidmusic/PHPTextTypes/blob/main/src/classes/strings/Id.php)
 
 An Id is AlphanumericText whose length is between 60 and 80
 characters.
