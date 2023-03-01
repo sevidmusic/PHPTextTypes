@@ -210,6 +210,8 @@ trait NameTestTrait
      *
      * @return void
      *
+     * @covers PHPTextTypes\classes\strings\Name::__toString()
+     *
      */
     public function test_Name_always_begins_with_an_alphanumeric_character(): void
     {
@@ -232,6 +234,8 @@ trait NameTestTrait
      * Test that the length of a Name less than or equal to 70.
      *
      * @return void
+     *
+     * @covers PHPTextTypes\classes\strings\Name::length()
      *
      */
     public function test_that_the_length_of_a_Name_is_less_than_or_equal_to_70(): void
@@ -258,6 +262,8 @@ trait NameTestTrait
      * Test that the length of a Name is always at least 1.
      *
      * @return void
+     *
+     * @covers PHPTextTypes\classes\strings\Name::length()
      *
      */
     public function test_that_the_length_of_a_Name_is_always_at_least_1(): void

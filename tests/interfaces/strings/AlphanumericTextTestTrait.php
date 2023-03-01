@@ -176,6 +176,8 @@ trait AlphanumericTextTestTrait
      *
      * @return void
      *
+     * @covers PHPTextTypes\classes\strings\AlphanumericText::__toString()
+     *
      */
     public function test__to_string_returns_an_alphanumeric_string(): void
     {
@@ -197,6 +199,8 @@ trait AlphanumericTextTestTrait
      * form of the original Text.
      *
      * @return void
+     *
+     * @covers PHPTextTypes\classes\strings\AlphanumericText::__toString()
      *
      */
     public function test__to_string_returns_an_alphanumeric_form_of_the_original_text(): void

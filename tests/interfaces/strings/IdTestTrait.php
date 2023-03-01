@@ -125,6 +125,8 @@ trait IdTestTrait
      *
      * @return void
      *
+     * @covers PHPTextTypes\classes\strings\Id::length()
+     *
      */
     public function test_length_is_greater_than_or_equal_to_60(): void
     {
@@ -147,6 +149,8 @@ trait IdTestTrait
      * Test that the length of an Id is less than or equal to 80.
      *
      * @return void
+     *
+     * @covers PHPTextTypes\classes\strings\Id::length()
      *
      */
     public function test_length_is_less_than_or_equal_to_80(): void

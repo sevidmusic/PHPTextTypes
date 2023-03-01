@@ -152,6 +152,8 @@ trait TextTestTrait
      *
      * @return void
      *
+     * @covers PHPTextTypes\classes\strings\Text::__toString()
+     *
      */
     public function test___toString_returns_the_expected_string(): void
     {
@@ -171,6 +173,8 @@ trait TextTestTrait
      * if any of the specified strings are not in the expected string.
      *
      * @return void
+     *
+     * @covers PHPTextTypes\classes\strings\Text::contains()
      *
      */
     public function test_contains_returns_false_if_any_of_the_specified_strings_are_not_in_the_expected_string(): void
@@ -192,6 +196,8 @@ trait TextTestTrait
      * if all of the specified strings are in the expected string.
      *
      * @return void
+     *
+     * @covers PHPTextTypes\classes\strings\Text::contains()
      *
      */
     public function test_contains_returns_true_if_all_of_the_specified_strings_are_in_the_expected_string(): void
@@ -217,6 +223,9 @@ trait TextTestTrait
      * length of the expected string.
      *
      * @return void
+     *
+     * @covers PHPTextTypes\classes\strings\Text::length()
+     *
      */
     public function test_length_returns_the_expected_strings_length(): void
     {
