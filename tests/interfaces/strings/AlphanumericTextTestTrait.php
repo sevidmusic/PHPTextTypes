@@ -176,7 +176,7 @@ trait AlphanumericTextTestTrait
      *
      * @return void
      *
-     * @covers Darling\PHPTextTypes\classes\strings\AlphanumericText::__toString()
+     * @covers \Darling\PHPTextTypes\classes\strings\AlphanumericText::__toString()
      *
      */
     public function test__to_string_returns_an_alphanumeric_string(): void
@@ -200,7 +200,7 @@ trait AlphanumericTextTestTrait
      *
      * @return void
      *
-     * @covers Darling\PHPTextTypes\classes\strings\AlphanumericText::__toString()
+     * @covers \Darling\PHPTextTypes\classes\strings\AlphanumericText::__toString()
      *
      */
     public function test__to_string_returns_an_alphanumeric_form_of_the_original_text(): void

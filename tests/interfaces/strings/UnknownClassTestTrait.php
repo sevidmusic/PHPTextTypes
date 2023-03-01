@@ -87,7 +87,7 @@ trait UnknownClassTestTrait
      *
      * @return void
      *
-     * @covers Darling\PHPTextTypes\classes\strings\UnknownClass::__toString()
+     * @covers \Darling\PHPTextTypes\classes\strings\UnknownClass::__toString()
      *
      */
     public function test___toString_returns_the_fully_qualified_class_name_of_the_expected_class(): void

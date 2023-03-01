@@ -125,7 +125,7 @@ trait IdTestTrait
      *
      * @return void
      *
-     * @covers Darling\PHPTextTypes\classes\strings\Id::length()
+     * @covers \Darling\PHPTextTypes\classes\strings\Id::length()
      *
      */
     public function test_length_is_greater_than_or_equal_to_60(): void
@@ -150,7 +150,7 @@ trait IdTestTrait
      *
      * @return void
      *
-     * @covers Darling\PHPTextTypes\classes\strings\Id::length()
+     * @covers \Darling\PHPTextTypes\classes\strings\Id::length()
      *
      */
     public function test_length_is_less_than_or_equal_to_80(): void
