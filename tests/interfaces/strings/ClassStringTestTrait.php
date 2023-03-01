@@ -205,7 +205,7 @@ trait ClassStringTestTrait
      *
      * @return void
      *
-     * @covers Darling\PHPTextTypes\classes\strings\ClassString::__toString()
+     * @covers \Darling\PHPTextTypes\classes\strings\ClassString::__toString()
      *
      */
     public function test___toString_returns_the_fully_qualified_class_name_of_an_UnknonwClass_if_the_expected_class_does_not_exist(): void
@@ -231,7 +231,7 @@ trait ClassStringTestTrait
      *
      * @return void
      *
-     * @covers Darling\PHPTextTypes\classes\strings\ClassString::__toString()
+     * @covers \Darling\PHPTextTypes\classes\strings\ClassString::__toString()
      *
      */
     public function test___toString_returns_the_fully_qualified_class_name_of_an_existing_class(): void
@@ -255,7 +255,7 @@ trait ClassStringTestTrait
      *
      * @return void
      *
-     * @covers Darling\PHPTextTypes\classes\strings\ClassString::__toString()
+     * @covers \Darling\PHPTextTypes\classes\strings\ClassString::__toString()
      */
     public function test___toString_returns_the_fully_qualified_class_name_of_the_expected_class(): void
     {
