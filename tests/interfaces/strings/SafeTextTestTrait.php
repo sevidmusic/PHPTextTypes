@@ -363,7 +363,7 @@ trait SafeTextTestTrait
      *
      * @return void
      *
-     * @covers PHPTextTypes\classes\strings\SafeText::__toString()
+     * @covers Darling\PHPTextTypes\classes\strings\SafeText::__toString()
      *
      */
     public function test___toString_returns_a_modified_version_of_the_string_represented_by_the_original_Text_where_all_consecutive_sequences_of_2_or_more_hyphens_have_been_replaced_by_a_single_hyphen(): void
@@ -392,7 +392,7 @@ trait SafeTextTestTrait
      *
      * @return void
      *
-     * @covers PHPTextTypes\classes\strings\SafeText::__toString()
+     * @covers Darling\PHPTextTypes\classes\strings\SafeText::__toString()
      *
      */
     public function test___toString_returns_a_modified_version_of_the_string_represented_by_the_original_Text_where_all_consecutive_sequences_of_2_or_more_periods_have_been_replaced_by_a_single_period(): void
@@ -421,7 +421,7 @@ trait SafeTextTestTrait
      *
      * @return void
      *
-     * @covers PHPTextTypes\classes\strings\SafeText::__toString()
+     * @covers Darling\PHPTextTypes\classes\strings\SafeText::__toString()
      *
      */
     public function test___toString_returns_a_modified_version_of_the_string_represented_by_the_original_Text_where_all_consecutive_sequences_of_2_or_more_underscores_have_been_replaced_by_a_single_underscore(): void
@@ -451,7 +451,7 @@ trait SafeTextTestTrait
      *
      * @return void
      *
-     * @covers PHPTextTypes\classes\strings\SafeText::__toString()
+     * @covers Darling\PHPTextTypes\classes\strings\SafeText::__toString()
      *
      */
     public function test___toString_returns_a_modified_version_of_the_string_represented_by_the_original_Text_where_all_consecutive_sequences_of_2_or_more_unsafe_characters_have_been_replaced_by_a_single_underscore(): void
@@ -480,7 +480,7 @@ trait SafeTextTestTrait
      *
      * @return void
      *
-     * @covers PHPTextTypes\classes\strings\SafeText::__toString()
+     * @covers Darling\PHPTextTypes\classes\strings\SafeText::__toString()
      *
      */
     public function test___toString_returns_a_modified_version_of_the_string_represented_by_the_original_Text_where_all_unsafe_characters_have_been_replaced_by_underscores(): void
@@ -508,7 +508,7 @@ trait SafeTextTestTrait
      *
      * @return void
      *
-     * @covers PHPTextTypes\classes\strings\SafeText::__toString()
+     * @covers Darling\PHPTextTypes\classes\strings\SafeText::__toString()
      *
      */
     public function test___toString_returns_the_numeric_character_0_if_original_text_was_empty(): void
@@ -532,7 +532,7 @@ trait SafeTextTestTrait
      *
      * @return void
      *
-     * @covers PHPTextTypes\classes\strings\SafeText::originalText()
+     * @covers Darling\PHPTextTypes\classes\strings\SafeText::originalText()
      *
      */
     public function test_originalText_returns_the_original_Text(): void
