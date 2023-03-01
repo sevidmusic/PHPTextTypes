@@ -6,13 +6,13 @@ A collection of classes that represent various types of text.
 
 - [Classes](#classes)
 
-  - [Darling\PHPTextTypes\Text](#darlingphptexttypestext)
-  - [Darling\PHPTextTypes\ClassString](#darlingphptexttypesclassstring)
-  - [Darling\PHPTextTypes\UnknownClass](#darlingphptexttypesunknownclass)
-  - [Darling\PHPTextTypes\SafeText](#darlingphptexttypessafetext)
-  - [Darling\PHPTextTypes\AlphanumericText](#darlingphptexttypesalphanumerictext)
-  - [Darling\PHPTextTypes\Name](#darlingphptexttypesname)
-  - [Darling\PHPTextTypes\Id](#darlingphptexttypesid)
+  - [Darling\PHPTextTypes\classes\strings\Text](#darlingphptexttypesclassesstringstext)
+  - [Darling\PHPTextTypes\classes\strings\ClassString](#darlingphptexttypesclassesstringsclassstring)
+  - [Darling\PHPTextTypes\classes\strings\UnknownClass](#darlingphptexttypesclassesstringsunknownclass)
+  - [Darling\PHPTextTypes\classes\strings\SafeText](#darlingphptexttypesclassesstringssafetext)
+  - [Darling\PHPTextTypes\classes\strings\AlphanumericText](#darlingphptexttypesclassesstringsalphanumerictext)
+  - [Darling\PHPTextTypes\classes\strings\Name](#darlingphptexttypesclassesstringsname)
+  - [Darling\PHPTextTypes\classes\strings\Id](#darlingphptexttypesclassesstringsid)
 
 # Installation
 
@@ -28,13 +28,13 @@ The following is an overview of the classes provided by the
 These classes can be used as is, or extended to define new
 types of text.
 
-### [Darling\PHPTextTypes\Text](https://github.com/sevidmusic/PHPTextTypes/blob/main/src/classes/strings/Text.php)
+### [Darling\PHPTextTypes\classes\strings\Text](https://github.com/sevidmusic/PHPTextTypes/blob/main/src/classes/strings/Text.php)
 
 Text represents a string, can be cast to the string it represents,
 and can provide information about the string it represents.
 
 Note:
-The [Darling\PHPTextTypes\Text](https://github.com/sevidmusic/PHPTextTypes/blob/main/src/classes/strings/Text.php)
+The [Darling\PHPTextTypes\classes\strings\Text](https://github.com/sevidmusic/PHPTextTypes/blob/main/src/classes/strings/Text.php)
 class is the parent of all other classes defined by this library.
 
 Example:
@@ -46,7 +46,7 @@ Example:
 
 require __DIR__ . '/vendor/autoload.php';
 
-use \Darling\PHPTextTypes\classes\strings\Text;
+use \Darling\PHPTextTypes\classes\strings\classes\strings\Text;
 
 $text = new Text('Foo bar baz.');
 
@@ -67,7 +67,7 @@ echo ($text->contains('foo') ? 'True' : 'False');
 
 ```
 
-### [Darling\PHPTextTypes\ClassString](https://github.com/sevidmusic/PHPTextTypes/blob/main/src/classes/strings/ClassString.php)
+### [Darling\PHPTextTypes\classes\strings\ClassString](https://github.com/sevidmusic/PHPTextTypes/blob/main/src/classes/strings/ClassString.php)
 
 A ClassString is the name of an existing Class prefixed by
 it's namespace.
@@ -79,7 +79,7 @@ Example:
 
 require __DIR__ . '/vendor/autoload.php';
 
-use \Darling\PHPTextTypes\classes\strings\ClassString;
+use \Darling\PHPTextTypes\classes\strings\classes\strings\ClassString;
 
 $obj = (object) array('propertyName' => 'value');
 
@@ -91,11 +91,11 @@ echo $classString;
 $classString = new ClassString($classString);
 
 echo $classString;
-// example output: Darling\PHPTextTypes\classes\strings\ClassString
+// example output: Darling\PHPTextTypes\classes\strings\classes\strings\ClassString
 
 ```
 
-### [Darling\PHPTextTypes\UnknownClass](https://github.com/sevidmusic/PHPTextTypes/blob/main/src/classes/strings/UnknownClass.php)
+### [Darling\PHPTextTypes\classes\strings\UnknownClass](https://github.com/sevidmusic/PHPTextTypes/blob/main/src/classes/strings/UnknownClass.php)
 
 An UnknownClass is a ClassString that represents an unknown class.
 
@@ -106,13 +106,13 @@ Example:
 
 require __DIR__ . '/vendor/autoload.php';
 
-use \Darling\PHPTextTypes\classes\strings\ClassString;
-use \Darling\PHPTextTypes\classes\strings\UnknownClass;
+use \Darling\PHPTextTypes\classes\strings\classes\strings\ClassString;
+use \Darling\PHPTextTypes\classes\strings\classes\strings\UnknownClass;
 
 $unknownClass = new UnknownClass();
 
 echo $unknownClass;
-// example output: Darling\PHPTextTypes\classes\strings\UnknownClass
+// example output: Darling\PHPTextTypes\classes\strings\classes\strings\UnknownClass
 
 /**
  * Note:
@@ -128,16 +128,16 @@ echo $unknownClass;
 $classString = new ClassString('Class\That\Does\Not\Exist');
 
 echo $classString;
-// example output: Darling\PHPTextTypes\classes\strings\UnknownClass
+// example output: Darling\PHPTextTypes\classes\strings\classes\strings\UnknownClass
 
 $classString = new ClassString('a string');
 
 echo $classString;
-// example output: Darling\PHPTextTypes\classes\strings\UnknownClass
+// example output: Darling\PHPTextTypes\classes\strings\classes\strings\UnknownClass
 
 ```
 
-### [Darling\PHPTextTypes\SafeText](https://github.com/sevidmusic/PHPTextTypes/blob/main/src/classes/strings/SafeText.php)
+### [Darling\PHPTextTypes\classes\strings\SafeText](https://github.com/sevidmusic/PHPTextTypes/blob/main/src/classes/strings/SafeText.php)
 
 SafeText is used to provide a safe form of Text that may contain
 unsafe characters.
@@ -174,8 +174,8 @@ Example:
 
 require __DIR__ . '/vendor/autoload.php';
 
-use \Darling\PHPTextTypes\classes\strings\SafeText;
-use \Darling\PHPTextTypes\classes\strings\Text;
+use \Darling\PHPTextTypes\classes\strings\classes\strings\SafeText;
+use \Darling\PHPTextTypes\classes\strings\classes\strings\Text;
 
 $safeText = new SafeText(new Text('Foo Bar Baz'));
 
@@ -184,7 +184,7 @@ echo $safeText;
 
 ```
 
-### [Darling\PHPTextTypes\AlphanumericText](https://github.com/sevidmusic/PHPTextTypes/blob/main/src/classes/strings/AlphanumericText.php)
+### [Darling\PHPTextTypes\classes\strings\AlphanumericText](https://github.com/sevidmusic/PHPTextTypes/blob/main/src/classes/strings/AlphanumericText.php)
 
 AlphanumericText is SafeText that only contains
 alphanumeric characters.
@@ -196,8 +196,8 @@ Example:
 
 require __DIR__ . '/vendor/autoload.php';
 
-use \Darling\PHPTextTypes\classes\strings\AlphanumericText;
-use \Darling\PHPTextTypes\classes\strings\Text;
+use \Darling\PHPTextTypes\classes\strings\classes\strings\AlphanumericText;
+use \Darling\PHPTextTypes\classes\strings\classes\strings\Text;
 
 $alphanumericText = new AlphanumericText(
     new Text('Foo_Bar baz-bazzer')
@@ -208,7 +208,7 @@ echo $alphanumericText;
 
 ```
 
-### [Darling\PHPTextTypes\Name](https://github.com/sevidmusic/PHPTextTypes/blob/main/src/classes/strings/Name.php)
+### [Darling\PHPTextTypes\classes\strings\Name](https://github.com/sevidmusic/PHPTextTypes/blob/main/src/classes/strings/Name.php)
 
 A Name is SafeText that begins with an alphanumeric character,
 is at least 1 character in length, is no more than 70 characters
@@ -226,8 +226,8 @@ Example:
 
 require __DIR__ . '/vendor/autoload.php';
 
-use \Darling\PHPTextTypes\classes\strings\Name;
-use \Darling\PHPTextTypes\classes\strings\Text;
+use \Darling\PHPTextTypes\classes\strings\classes\strings\Name;
+use \Darling\PHPTextTypes\classes\strings\classes\strings\Text;
 
 $name = new Name(new Text('Foo Bar Baz. Bin Bar-Foo Bazzer'));
 
@@ -236,7 +236,7 @@ echo $name;
 
 ```
 
-### [Darling\PHPTextTypes\Id](https://github.com/sevidmusic/PHPTextTypes/blob/main/src/classes/strings/Id.php)
+### [Darling\PHPTextTypes\classes\strings\Id](https://github.com/sevidmusic/PHPTextTypes/blob/main/src/classes/strings/Id.php)
 
 An Id is AlphanumericText whose length is between 60 and 80
 characters.
@@ -248,7 +248,7 @@ Example:
 
 require __DIR__ . '/vendor/autoload.php';
 
-use \Darling\PHPTextTypes\classes\strings\Id;
+use \Darling\PHPTextTypes\classes\strings\classes\strings\Id;
 
 $id = new Id();
 
