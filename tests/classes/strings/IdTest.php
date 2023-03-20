@@ -1,10 +1,10 @@
 <?php
 
-namespace tests\classes\strings;
+namespace Darling\PHPTextTypes\Tests\classes\strings;
 
 use Darling\PHPTextTypes\classes\strings\Id;
-use tests\classes\strings\AlphanumericTextTest;
-use tests\interfaces\strings\IdTestTrait;
+use Darling\PHPTextTypes\Tests\classes\strings\AlphanumericTextTest;
+use Darling\PHPTextTypes\Tests\interfaces\strings\IdTestTrait;
 
 class IdTest extends AlphanumericTextTest
 {

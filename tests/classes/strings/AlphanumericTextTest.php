@@ -1,11 +1,11 @@
 <?php
 
-namespace tests\classes\strings;
+namespace Darling\PHPTextTypes\Tests\classes\strings;
 
 use Darling\PHPTextTypes\classes\strings\AlphanumericText;
 use Darling\PHPTextTypes\interfaces\strings\Text;
-use tests\classes\strings\SafeTextTest;
-use tests\interfaces\strings\AlphanumericTextTestTrait;
+use Darling\PHPTextTypes\Tests\classes\strings\SafeTextTest;
+use Darling\PHPTextTypes\Tests\interfaces\strings\AlphanumericTextTestTrait;
 
 class AlphanumericTextTest extends SafeTextTest
 {

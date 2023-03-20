@@ -1,6 +1,6 @@
 <?php
 
-namespace tests\interfaces\strings;
+namespace Darling\PHPTextTypes\Tests\interfaces\strings;
 
 use Darling\PHPTextTypes\interfaces\strings\Text;
 

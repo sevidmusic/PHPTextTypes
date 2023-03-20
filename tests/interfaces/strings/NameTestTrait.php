@@ -1,11 +1,11 @@
 <?php
 
-namespace tests\interfaces\strings;
+namespace Darling\PHPTextTypes\Tests\interfaces\strings;
 
 use Darling\PHPTextTypes\classes\strings\Text as TextToConvertToAName;
 use Darling\PHPTextTypes\interfaces\strings\Name;
 use Darling\PHPTextTypes\interfaces\strings\Text;
-use tests\interfaces\strings\SafeTextTestTrait;
+use Darling\PHPTextTypes\Tests\interfaces\strings\SafeTextTestTrait;
 
 /**
  * The NameTestTrait defines common tests for implementations of the
