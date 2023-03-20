@@ -1,13 +1,13 @@
 <?php
 
-namespace tests\interfaces\strings;
+namespace Darling\PHPTextTypes\Tests\interfaces\strings;
 
 use Darling\PHPTextTypes\classes\strings\SafeText as ExistingClassSafeText;
 use Darling\PHPTextTypes\classes\strings\Text as ExistingClassText;
 use Darling\PHPTextTypes\classes\strings\UnknownClass;
 use Darling\PHPTextTypes\interfaces\strings\ClassString;
 use Darling\PHPTextTypes\interfaces\strings\Text;
-use tests\interfaces\strings\TextTestTrait;
+use Darling\PHPTextTypes\Tests\interfaces\strings\TextTestTrait;
 
 /**
  * The ClassStringTestTrait defines common tests for implementations
@@ -174,10 +174,10 @@ trait ClassStringTestTrait
      *
      * ```
      * echo $this->determineClass($this);
-     * // example output: tests\classes\strings\ClassStringTest
+     * // example output: Darling\PHPTextTypes\Tests\classes\strings\ClassStringTest
      *
      * echo $this->determineClass($this::class);
-     * // example output: tests\classes\strings\ClassStringTest
+     * // example output: Darling\PHPTextTypes\Tests\classes\strings\ClassStringTest
      *
      * echo $this->determineClass('invalid-class-string');
      * // example output: Darling\PHPTextTypes\classes\strings\UnknownClass

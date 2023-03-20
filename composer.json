@@ -17,7 +17,7 @@
     "autoload": {
         "psr-4": {
             "Darling\\PHPTextTypes\\": "src/",
-            "tests\\": "tests/"
+            "Darling\\PHPTextTypes\\Tests\\": "tests/"
         }
     },
     "require-dev": {

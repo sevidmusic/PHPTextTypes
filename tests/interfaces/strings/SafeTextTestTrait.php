@@ -1,11 +1,11 @@
 <?php
 
-namespace tests\interfaces\strings;
+namespace Darling\PHPTextTypes\Tests\interfaces\strings;
 
 use Darling\PHPTextTypes\classes\strings\Text as TextToBeRepresentedBySafeText;
 use Darling\PHPTextTypes\interfaces\strings\SafeText;
 use Darling\PHPTextTypes\interfaces\strings\Text;
-use tests\interfaces\strings\TextTestTrait;
+use Darling\PHPTextTypes\Tests\interfaces\strings\TextTestTrait;
 
 /**
  * The SafeTextTestTrait defines common tests for implementations of
