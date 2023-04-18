@@ -25,10 +25,11 @@ class ClassStringTest extends TextTest
     protected function setUp(): void
     {
         $values = [
-            #$this->randomChars(),
-            #ClassString::class,
+            $this->randomChars(),
+            ClassString::class,
             Text::class,
-            #$this,
+            $this,
+            $this->randomChars(),
         ];
         $this->setUpWithSpecifiedClass(
             $values[array_rand($values)]
