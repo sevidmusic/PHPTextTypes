@@ -5,8 +5,8 @@ namespace Darling\PHPTextTypes\interfaces\strings;
 use Darling\PHPTextTypes\interfaces\strings\Text;
 
 /**
- * A ClassString is the name of an existing Class prefixed by
- * it's namespace.
+ * A ClassString is the fully qualified namespace and class name of
+ * an existing Class that is not abstract.
  *
  * @example
  *
@@ -23,8 +23,8 @@ interface ClassString extends Text
 {
 
     /**
-     * Return the name of an existing Class prefixed by it's
-     * namespace.
+     * Return the fully qualified namespace and class name of an
+     * existing Class that is not abstract.
      *
      * @return class-string
      *

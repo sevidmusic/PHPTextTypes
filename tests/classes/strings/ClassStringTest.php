@@ -27,7 +27,9 @@ class ClassStringTest extends TextTest
         $values = [
             $this->randomChars(),
             ClassString::class,
+            Text::class,
             $this,
+            $this->randomChars(),
         ];
         $this->setUpWithSpecifiedClass(
             $values[array_rand($values)]
@@ -39,7 +41,7 @@ class ClassStringTest extends TextTest
     ): void
     {
         $this->setExpectedString(
-            $this->determineClass($classString)
+            $this->determineExpectedClassString($classString)
         );
         $classStringInstance = new ClassString($classString);
         $this->setTextTestInstance($classStringInstance);
