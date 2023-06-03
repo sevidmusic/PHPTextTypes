@@ -124,7 +124,7 @@ class ClassString extends Text implements ClassStringInterface
      *
      * Darling\PHPTextTypes\classes\strings\UnknownClass
      *
-     * @return string
+     * @return class-string
      *
      * @example
      *
