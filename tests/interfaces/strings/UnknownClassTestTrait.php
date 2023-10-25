@@ -1,10 +1,10 @@
 <?php
 
-namespace Darling\PHPTextTypes\Tests\interfaces\strings;
+namespace Darling\PHPTextTypes\tests\interfaces\strings;
 
 use Darling\PHPTextTypes\classes\strings\UnknownClass as UnknownClassString;
 use Darling\PHPTextTypes\interfaces\strings\UnknownClass;
-use Darling\PHPTextTypes\Tests\interfaces\strings\ClassStringTestTrait;
+use Darling\PHPTextTypes\tests\interfaces\strings\ClassStringTestTrait;
 
 /**
  * The UnknownClassTestTrait defines common tests for

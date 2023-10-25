@@ -1,10 +1,10 @@
 <?php
 
-namespace Darling\PHPTextTypes\Tests\classes\strings;
+namespace Darling\PHPTextTypes\tests\classes\strings;
 
 use Darling\PHPTextTypes\classes\strings\Text;
-use Darling\PHPTextTypes\Tests\PHPTextTypesTest;
-use Darling\PHPTextTypes\Tests\interfaces\strings\TextTestTrait;
+use Darling\PHPTextTypes\tests\PHPTextTypesTest;
+use Darling\PHPTextTypes\tests\interfaces\strings\TextTestTrait;
 
 class TextTest extends PHPTextTypesTest
 {

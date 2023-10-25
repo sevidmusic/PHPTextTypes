@@ -1,9 +1,9 @@
 <?php
 
-namespace Darling\PHPTextTypes\Tests\interfaces\strings;
+namespace Darling\PHPTextTypes\tests\interfaces\strings;
 
 use Darling\PHPTextTypes\interfaces\strings\Id;
-use Darling\PHPTextTypes\Tests\interfaces\strings\AlphanumericTextTestTrait;
+use Darling\PHPTextTypes\tests\interfaces\strings\AlphanumericTextTestTrait;
 
 /**
  * The IdTestTrait defines common tests for implementations of the

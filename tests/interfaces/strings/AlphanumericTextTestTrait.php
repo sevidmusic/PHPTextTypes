@@ -1,10 +1,10 @@
 <?php
 
-namespace Darling\PHPTextTypes\Tests\interfaces\strings;
+namespace Darling\PHPTextTypes\tests\interfaces\strings;
 
 use Darling\PHPTextTypes\interfaces\strings\AlphanumericText;
 use Darling\PHPTextTypes\interfaces\strings\Text;
-use Darling\PHPTextTypes\Tests\interfaces\strings\SafeTextTestTrait;
+use Darling\PHPTextTypes\tests\interfaces\strings\SafeTextTestTrait;
 
 /**
  * The AlphanumericTextTestTrait defines common tests for

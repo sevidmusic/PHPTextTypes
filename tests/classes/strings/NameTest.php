@@ -1,10 +1,10 @@
 <?php
 
-namespace Darling\PHPTextTypes\Tests\classes\strings;
+namespace Darling\PHPTextTypes\tests\classes\strings;
 
 use Darling\PHPTextTypes\classes\strings\Name;
 use Darling\PHPTextTypes\interfaces\strings\Text;
-use Darling\PHPTextTypes\Tests\interfaces\strings\NameTestTrait;
+use Darling\PHPTextTypes\tests\interfaces\strings\NameTestTrait;
 
 class NameTest extends SafeTextTest
 {
