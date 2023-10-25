@@ -1,13 +1,13 @@
 <?php
 
-namespace Darling\PHPTextTypes\Tests\classes\strings;
+namespace Darling\PHPTextTypes\tests\classes\strings;
 
 use Darling\PHPTextTypes\classes\strings\ClassString;
 use Darling\PHPTextTypes\classes\strings\Text as TextToBeRepresentedByClassString;
 use Darling\PHPTextTypes\classes\strings\UnknownClass;
 use Darling\PHPTextTypes\interfaces\strings\Text as Text;
-use Darling\PHPTextTypes\Tests\classes\strings\TextTest;
-use Darling\PHPTextTypes\Tests\interfaces\strings\ClassStringTestTrait;
+use Darling\PHPTextTypes\tests\classes\strings\TextTest;
+use Darling\PHPTextTypes\tests\interfaces\strings\ClassStringTestTrait;
 
 class ClassStringTest extends TextTest
 {

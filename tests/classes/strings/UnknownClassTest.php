@@ -1,10 +1,10 @@
 <?php
 
-namespace Darling\PHPTextTypes\Tests\classes\strings;
+namespace Darling\PHPTextTypes\tests\classes\strings;
 
 use Darling\PHPTextTypes\classes\strings\UnknownClass;
-use Darling\PHPTextTypes\Tests\classes\strings\ClassStringTest;
-use Darling\PHPTextTypes\Tests\interfaces\strings\UnknownClassTestTrait;
+use Darling\PHPTextTypes\tests\classes\strings\ClassStringTest;
+use Darling\PHPTextTypes\tests\interfaces\strings\UnknownClassTestTrait;
 
 final class UnknownClassTest extends ClassStringTest
 {

@@ -1,3 +1,5 @@
 /vendor/
 .phpunit.result.cache
 .phpunit.cache/
+vimfilelist
+.phpactor.json

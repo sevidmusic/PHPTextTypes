@@ -1,8 +1,8 @@
 <?php
 
-namespace Darling\PHPTextTypes\Tests\interfaces\strings;
+namespace Darling\PHPTextTypes\tests\interfaces\strings;
 
-use Darling\PHPTextTypes\Tests\interfaces\strings\TextTestTrait;
+use Darling\PHPTextTypes\tests\interfaces\strings\TextTestTrait;
 use Darling\PHPTextTypes\classes\strings\SafeText as ExistingClassSafeText;
 use Darling\PHPTextTypes\classes\strings\Text as ExistingClassText;
 use Darling\PHPTextTypes\classes\strings\UnknownClass;

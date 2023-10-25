@@ -1,6 +1,6 @@
 <?php
 
-namespace Darling\PHPTextTypes\Tests;
+namespace Darling\PHPTextTypes\tests;
 
 use PHPUnit\Framework\TestCase;
 use Darling\PHPUnitTestUtilities\traits\PHPUnitConfigurationTests;

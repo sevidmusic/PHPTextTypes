@@ -1,12 +1,12 @@
 <?php
 
-namespace Darling\PHPTextTypes\Tests\classes\strings;
+namespace Darling\PHPTextTypes\tests\classes\strings;
 
 use Darling\PHPTextTypes\classes\strings\SafeText;
 use Darling\PHPTextTypes\classes\strings\Text as TextToBeRepresentedBySafeText;
 use Darling\PHPTextTypes\interfaces\strings\Text as Text;
-use Darling\PHPTextTypes\Tests\classes\strings\TextTest;
-use Darling\PHPTextTypes\Tests\interfaces\strings\SafeTextTestTrait;
+use Darling\PHPTextTypes\tests\classes\strings\TextTest;
+use Darling\PHPTextTypes\tests\interfaces\strings\SafeTextTestTrait;
 
 class SafeTextTest extends TextTest
 {
