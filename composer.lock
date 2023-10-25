@@ -4,8 +4,52 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8501b4e9b5aeebf22ec5f41b55141a29",
+    "content-hash": "752af405c1750e55f31851e46eae00ee",
     "packages": [
+        {
+            "name": "darling/php-darling-dev-tools",
+            "version": "v1.0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sevidmusic/PHPDarlingDevTools.git",
+                "reference": "0c6ea7a3c4fcfdb43f607d10701c0e5c80b5ada8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sevidmusic/PHPDarlingDevTools/zipball/0c6ea7a3c4fcfdb43f607d10701c0e5c80b5ada8",
+                "reference": "0c6ea7a3c4fcfdb43f607d10701c0e5c80b5ada8",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Darling\\PHPDarlingDevTools\\": "src/",
+                    "Darling\\PHPDarlingDevTools\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "sevidmusic",
+                    "email": "sdmwebsdm@gmail.com"
+                }
+            ],
+            "description": "Development tools for development of Darling PHP libraries and projects. ",
+            "support": {
+                "issues": "https://github.com/sevidmusic/PHPDarlingDevTools/issues",
+                "source": "https://github.com/sevidmusic/PHPDarlingDevTools/tree/v1.0.7"
+            },
+            "time": "2023-08-01T15:10:15+00:00"
+        },
         {
             "name": "darling/php-unit-test-utilities",
             "version": "v1.0.7",
