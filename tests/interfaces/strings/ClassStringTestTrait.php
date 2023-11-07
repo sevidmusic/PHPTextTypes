@@ -205,17 +205,11 @@ trait ClassStringTestTrait
         object|string $class
     ): string
     {
-        return match(is_object($class)) {
-            true => $class::class,
-            default =>
-                $this->determineClassString(
-                    (
-                        is_object($class)
-                        ? $class::class
-                        : $class
-                    )
-                ),
-        };
+
+        if(is_object($class)) {
+            return $class::class;
+        }
+        return $this->determineClassString($class);
     }
 
     /**
