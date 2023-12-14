@@ -2,7 +2,7 @@
 
 namespace Darling\PHPTextTypes\interfaces\collections;
 
-use \Darling\PHPTextTypes\classes\strings\Name;
+use \Darling\PHPTextTypes\interfaces\strings\Name;
 
 /**
  * A NameCollection is a collection of Name implementation instances.
