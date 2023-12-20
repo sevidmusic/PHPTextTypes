@@ -6,7 +6,7 @@ use Darling\PHPTextTypes\interfaces\strings\SafeText;
 
 /**
  * A Name is SafeText that begins with an alphanumeric character,
- * is at least 1 character in length, is no more than 70 characters
+ * is at least 1 character in length, is no more than 170 characters
  * in length, and only contains the following characters:
  *
  * - Alphanumeric characters: A-Z, a-z, and 0-9
@@ -30,7 +30,7 @@ interface Name extends SafeText
 
     /**
      * Return a string that begins with an alphanumeric character,
-     * is at least 1 character in length, is no more than 70
+     * is at least 1 character in length, is no more than 170
      * characters in length, and only contains the following
      * characters:
      *
