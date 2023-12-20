@@ -90,7 +90,7 @@ class Name extends SafeText implements NameInterface
         $string = substr(
             $string,
             $this->positionOfFirstAlphanumericCharacter($string),
-            70
+            170
         );
         return match(
             empty($string) ||

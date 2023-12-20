@@ -112,7 +112,7 @@ trait NameTestTrait
         $string = substr(
             $string,
             $this->positionOfFirstAlphanumericCharacter($string),
-            70
+            170
         );
         return match(
             empty($string) ||
@@ -231,14 +231,14 @@ trait NameTestTrait
     }
 
     /**
-     * Test that the length of a Name less than or equal to 70.
+     * Test that the length of a Name less than or equal to 170.
      *
      * @return void
      *
      * @covers \Darling\PHPTextTypes\classes\strings\Name::length()
      *
      */
-    public function test_that_the_length_of_a_Name_is_less_than_or_equal_to_70(): void
+    public function test_that_the_length_of_a_Name_is_less_than_or_equal_to_170(): void
     {
         $text = new TextToConvertToAName(
             str_shuffle(
@@ -248,12 +248,12 @@ trait NameTestTrait
         );
         $this->setUpWithSpecificText($text);
         $this->assertLessThanOrEqual(
-            70,
+            170,
             $this->nameTestInstance()->length(),
             $this->testFailedMessage(
                 $this->nameTestInstance(),
                 '',
-                'A Name\'s length must be less than or equal to 70'
+                'A Name\'s length must be less than or equal to 170'
             )
         );
     }
