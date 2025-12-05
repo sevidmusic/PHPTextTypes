@@ -5,10 +5,11 @@ namespace Darling\PHPTextTypes\tests\classes\strings;
 use Darling\PHPTextTypes\classes\strings\Text;
 use Darling\PHPTextTypes\tests\PHPTextTypesTest;
 use Darling\PHPTextTypes\tests\interfaces\strings\TextTestTrait;
+use PHPUnit\Framework\Attributes\CoversClass;
 
+#[CoversClass(Text::class)]
 class TextTest extends PHPTextTypesTest
 {
-
     /**
      * The TextTestTrait defines common tests for implementations of
      * the Darling\PHPTextTypes\interfaces\strings\Text interface.
@@ -23,5 +24,4 @@ class TextTest extends PHPTextTypesTest
         $this->setExpectedString($string);
         $this->setTextTestInstance(new Text($string));
     }
-
 }

@@ -6,6 +6,7 @@ use PHPUnit\Framework\TestCase;
 use Darling\PHPUnitTestUtilities\traits\PHPUnitConfigurationTests;
 use Darling\PHPUnitTestUtilities\traits\PHPUnitTestMessages;
 use Darling\PHPUnitTestUtilities\traits\PHPUnitRandomValues;
+use PHPUnit\Framework\Attributes\CoversClass;
 
 /**
  * Defines common methods that may be useful to all
@@ -19,10 +20,11 @@ use Darling\PHPUnitTestUtilities\traits\PHPUnitRandomValues;
  * class.
  *
  */
+
+#[CoversClass(PHPTextTypesTest::class)]
 class PHPTextTypesTest extends TestCase
 {
     use PHPUnitConfigurationTests;
     use PHPUnitTestMessages;
     use PHPUnitRandomValues;
 }
-

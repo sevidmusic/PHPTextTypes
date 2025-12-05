@@ -2,15 +2,16 @@
 
 namespace Darling\PHPTextTypes\tests\classes\collections;
 
-use \Darling\PHPTextTypes\classes\collections\NameCollection;
-use \Darling\PHPTextTypes\tests\PHPTextTypesTest;
-use \Darling\PHPTextTypes\tests\interfaces\collections\NameCollectionTestTrait;
-use \Darling\PHPTextTypes\classes\strings\Name;
-use \Darling\PHPTextTypes\classes\strings\Text;
+use Darling\PHPTextTypes\classes\collections\NameCollection;
+use Darling\PHPTextTypes\tests\PHPTextTypesTest;
+use Darling\PHPTextTypes\tests\interfaces\collections\NameCollectionTestTrait;
+use Darling\PHPTextTypes\classes\strings\Name;
+use Darling\PHPTextTypes\classes\strings\Text;
+use PHPUnit\Framework\Attributes\CoversClass;
 
+#[CoversClass(NameCollectionTest::class)]
 final class NameCollectionTest extends PHPTextTypesTest
 {
-
     /**
      * The NameCollectionTestTrait defines common tests for
      * implementations of the
@@ -39,6 +40,4 @@ final class NameCollectionTest extends PHPTextTypesTest
             )
         );
     }
-
 }
-

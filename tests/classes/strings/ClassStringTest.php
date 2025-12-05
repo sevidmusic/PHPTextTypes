@@ -3,15 +3,14 @@
 namespace Darling\PHPTextTypes\tests\classes\strings;
 
 use Darling\PHPTextTypes\classes\strings\ClassString;
-use Darling\PHPTextTypes\classes\strings\Text as TextToBeRepresentedByClassString;
-use Darling\PHPTextTypes\classes\strings\UnknownClass;
 use Darling\PHPTextTypes\interfaces\strings\Text as Text;
 use Darling\PHPTextTypes\tests\classes\strings\TextTest;
 use Darling\PHPTextTypes\tests\interfaces\strings\ClassStringTestTrait;
+use PHPUnit\Framework\Attributes\CoversClass;
 
+#[CoversClass(ClassStringTest::class)]
 class ClassStringTest extends TextTest
 {
-
     /**
      * The ClassStringTestTrait defines common tests for
      * implementations of the Darling\PHPTextTypes\interfaces\strings\ClassString
@@ -38,8 +37,7 @@ class ClassStringTest extends TextTest
 
     protected function setUpWithSpecifiedClass(
         object|string $classString
-    ): void
-    {
+    ): void {
         $this->setExpectedString(
             $this->determineExpectedClassString($classString)
         );
@@ -47,6 +45,4 @@ class ClassStringTest extends TextTest
         $this->setTextTestInstance($classStringInstance);
         $this->setClassStringTestInstance($classStringInstance);
     }
-
 }
-
