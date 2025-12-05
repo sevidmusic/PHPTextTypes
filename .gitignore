@@ -3,3 +3,5 @@
 .phpunit.cache/
 vimfilelist
 .phpactor.json
+.php-cs-fixer.cache
+.php-cs-fixer.dist.php
