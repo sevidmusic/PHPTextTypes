@@ -6,10 +6,11 @@ use Darling\PHPTextTypes\classes\strings\AlphanumericText;
 use Darling\PHPTextTypes\interfaces\strings\Text;
 use Darling\PHPTextTypes\tests\classes\strings\SafeTextTest;
 use Darling\PHPTextTypes\tests\interfaces\strings\AlphanumericTextTestTrait;
+use PHPUnit\Framework\Attributes\CoversClass;
 
+#[CoversClass(AlphanumericTextTest::class)]
 class AlphanumericTextTest extends SafeTextTest
 {
-
     /**
      * The AlphanumericTextTestTrait defines
      * common tests for implementations of the
@@ -29,6 +30,4 @@ class AlphanumericTextTest extends SafeTextTest
         $this->setAlphanumericTextTestInstance($alphanumericText);
         $this->setExpectedString($this->makeStringSafe($text));
     }
-
 }
-

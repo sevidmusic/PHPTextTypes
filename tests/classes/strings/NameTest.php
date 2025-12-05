@@ -5,10 +5,11 @@ namespace Darling\PHPTextTypes\tests\classes\strings;
 use Darling\PHPTextTypes\classes\strings\Name;
 use Darling\PHPTextTypes\interfaces\strings\Text;
 use Darling\PHPTextTypes\tests\interfaces\strings\NameTestTrait;
+use PHPUnit\Framework\Attributes\CoversClass;
 
+#[CoversClass(NameTest::class)]
 class NameTest extends SafeTextTest
 {
-
     use NameTestTrait;
 
     protected function setUpWithSpecificText(Text $text): void
@@ -19,5 +20,4 @@ class NameTest extends SafeTextTest
         $this->setNameTestInstance($name);
         $this->setExpectedString($this->makeStringSafe($text));
     }
-
 }

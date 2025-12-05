@@ -2,15 +2,16 @@
 
 namespace Darling\PHPTextTypes\tests\classes\collections;
 
-use \Darling\PHPTextTypes\classes\collections\SafeTextCollection;
-use \Darling\PHPTextTypes\tests\PHPTextTypesTest;
-use \Darling\PHPTextTypes\tests\interfaces\collections\SafeTextCollectionTestTrait;
-use \Darling\PHPTextTypes\classes\strings\SafeText;
-use \Darling\PHPTextTypes\classes\strings\Text;
+use Darling\PHPTextTypes\classes\collections\SafeTextCollection;
+use Darling\PHPTextTypes\tests\PHPTextTypesTest;
+use Darling\PHPTextTypes\tests\interfaces\collections\SafeTextCollectionTestTrait;
+use Darling\PHPTextTypes\classes\strings\SafeText;
+use Darling\PHPTextTypes\classes\strings\Text;
+use PHPUnit\Framework\Attributes\CoversClass;
 
+#[CoversClass(SafeTextCollectionTest::class)]
 final class SafeTextCollectionTest extends PHPTextTypesTest
 {
-
     /**
      * The SafeTextCollectionTestTrait defines common tests for
      * implementations of the
@@ -39,6 +40,4 @@ final class SafeTextCollectionTest extends PHPTextTypesTest
             )
         );
     }
-
 }
-

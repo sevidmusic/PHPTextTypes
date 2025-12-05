@@ -7,10 +7,11 @@ use Darling\PHPTextTypes\classes\strings\Text as TextToBeRepresentedBySafeText;
 use Darling\PHPTextTypes\interfaces\strings\Text as Text;
 use Darling\PHPTextTypes\tests\classes\strings\TextTest;
 use Darling\PHPTextTypes\tests\interfaces\strings\SafeTextTestTrait;
+use PHPUnit\Framework\Attributes\CoversClass;
 
+#[CoversClass(SafeTextTest::class)]
 class SafeTextTest extends TextTest
 {
-
     /**
      * The SafeTextTestTrait defines common tests for implementations
      * of the Darling\PHPTextTypes\interfaces\strings\SafeText interface.
@@ -41,5 +42,4 @@ class SafeTextTest extends TextTest
         $this->setSafeTextTestInstance($safeText);
         $this->setExpectedString($this->makeStringSafe($text));
     }
-
 }

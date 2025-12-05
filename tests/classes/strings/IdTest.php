@@ -5,10 +5,11 @@ namespace Darling\PHPTextTypes\tests\classes\strings;
 use Darling\PHPTextTypes\classes\strings\Id;
 use Darling\PHPTextTypes\tests\classes\strings\AlphanumericTextTest;
 use Darling\PHPTextTypes\tests\interfaces\strings\IdTestTrait;
+use PHPUnit\Framework\Attributes\CoversClass;
 
+#[CoversClass(IdTest::class)]
 class IdTest extends AlphanumericTextTest
 {
-
     /**
      * The IdTestTrait defines common tests for implementations
      * of the Darling\PHPTextTypes\interfaces\strings\Id interface.
@@ -34,4 +35,3 @@ class IdTest extends AlphanumericTextTest
     }
 
 }
-

@@ -2,14 +2,15 @@
 
 namespace Darling\PHPTextTypes\tests\classes\collections;
 
-use \Darling\PHPTextTypes\classes\collections\IdCollection;
-use \Darling\PHPTextTypes\tests\PHPTextTypesTest;
-use \Darling\PHPTextTypes\tests\interfaces\collections\IdCollectionTestTrait;
-use \Darling\PHPTextTypes\classes\strings\Id;
+use Darling\PHPTextTypes\classes\collections\IdCollection;
+use Darling\PHPTextTypes\tests\PHPTextTypesTest;
+use Darling\PHPTextTypes\tests\interfaces\collections\IdCollectionTestTrait;
+use Darling\PHPTextTypes\classes\strings\Id;
+use PHPUnit\Framework\Attributes\CoversClass;
 
+#[CoversClass(IdCollectionTest::class)]
 final class IdCollectionTest extends PHPTextTypesTest
 {
-
     /**
      * The IdCollectionTestTrait defines common tests for
      * implementations of the
@@ -38,6 +39,4 @@ final class IdCollectionTest extends PHPTextTypesTest
             )
         );
     }
-
 }
-
